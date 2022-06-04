@@ -1,0 +1,29 @@
+@import url('https://webfontworld.github.io/kt/YDestreet.css');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@font-face {
+  font-family: 'YDestreet';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetLight.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetLight.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetLight.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetLight.ttf') format("truetype");
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'YDestreet';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetBold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetBold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/kt/YDestreetBold.ttf') format("truetype");
+  font-display: swap;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}

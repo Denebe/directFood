@@ -1,5 +1,7 @@
-import React, {useEffect, useState} from 'react'
-import {mainApi} from './api/Api'
+import React from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Main from "./pages/Main/index"
+
 /*기능정의
 해외위해식품 회수정보
 http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endIdx
@@ -9,18 +11,12 @@ http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endId
 http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endIdx
 */
 const App = () => {
-  const [db, setData] = useState([]);
-  useEffect(() => {
-    mainApi().then((data) => setData(data));
-  })
-
-  console.log(db)
   return (
-    <div>
-      {db.map((data) => (
-        data.TITL
-      ))}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
