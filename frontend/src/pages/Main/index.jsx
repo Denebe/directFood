@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import * as Styled from './styled'
 import Background from '../../img/background.jpg';
+import {mainApi} from '../../api/Api'
 
 const Main = () => {
     const [db, setData] = useState([]);
