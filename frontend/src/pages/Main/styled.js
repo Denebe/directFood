@@ -15,7 +15,7 @@ export const BackgroundWrapper = styled.div`
     justify-content: center;
     background-image: url(${Background});
     background-size: cover;
-    width: 1400px;
+    width: 100%;
     height: 920px;
 `
 
