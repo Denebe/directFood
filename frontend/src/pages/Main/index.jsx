@@ -1,12 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import * as Styled from './styled'
-import {mainApi} from '../../api/Api'
+import Search from '../../Components/Search';
 
 const Main = () => {
-    const [db, setData] = useState([]);
-    useEffect(() => {
-        mainApi().then((data) => setData(data));
-    },[db])
+    
     return(
         <Styled.FlexWrapper>
             <Styled.BackgroundWrapper>
@@ -19,6 +16,7 @@ const Main = () => {
                 인체의 건강을 해치거나 해칠 우려가 있는 것을 말한다.</Styled.MainText>
                 <Styled.Icon src='scrolldown.png' id='scroll' />
             </Styled.BackgroundWrapper>
+            <Search />
         </Styled.FlexWrapper>
     )
 }
