@@ -7,13 +7,12 @@ import { SlickApi } from "../../api/Api";
 
 const Slide = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: true,
   };
 
   const [db, setData] = useState([]);
@@ -21,14 +20,23 @@ const Slide = () => {
     SlickApi(setData);
     console.log(db);
   }, []);
+  const slickList = [1,2,3,4,5]
   return (
       <Styled.Wrapper>
         <Slider {...settings}>
-          {db.map((v, i) => {
+          {db!==undefined ? db.map((v, i) => {
             return (
               <Styled.SlickBox key={i}>
                 <Styled.SlickContent>
                   <img src={v.IMAGE_URL.split(", ")[0]} />
+                </Styled.SlickContent>
+              </Styled.SlickBox>
+            );
+          }) : slickList.map((v, i) => {
+            return (
+              <Styled.SlickBox key={i}>
+                <Styled.SlickContent>
+                  {v}
                 </Styled.SlickContent>
               </Styled.SlickBox>
             );

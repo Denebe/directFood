@@ -4,12 +4,21 @@ export const FlexContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+    height: 80vh;
+    margin-top: 200px;
 `
 
 export const MainText = styled.div`
     font-family: NotoSansKR;
     font-size: 72px;
     font-weight: bold;
+    &#top {
+        margin-right: auto;
+    }
+    &#bottom {
+        margin-left: auto;
+    }
 `
 
 export const Wrapper = styled.div`
