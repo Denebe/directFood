@@ -7,7 +7,7 @@ import Information from '../../Components/Informaition';
 const Main = () => {
     
     return(
-        <div>
+        <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
         <Styled.FlexWrapper>
             <Styled.BackgroundWrapper>
                 <Styled.StyledLogo src='logo2.png' />
