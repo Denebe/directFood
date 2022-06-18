@@ -13,15 +13,7 @@ export const MainText = styled.div`
 `
 
 export const Wrapper = styled.div`
-    width: 65%;
-    @media screen and (max-width: 960px) {
-        width: 100%;
-    }
-    &#bottom {
-        @media screen and (max-width: 960px) {
-            width: 90%;
-        }
-    }
+    width: 40%;
 `
 
 export const SlickBox = styled.div`
@@ -30,6 +22,7 @@ export const SlickBox = styled.div`
 export const SlickContent = styled.div`
     font-size: 2rem;
     display: flex;
+    height: 300px;
     justify-content: center;
 `
 

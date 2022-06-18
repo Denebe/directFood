@@ -7,7 +7,6 @@ import {SlickApi} from "../../api/Api"
 
 const RecentBlock = () => {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -16,8 +15,6 @@ const RecentBlock = () => {
         arrows: true,
       };
         
-    const slickList = [1,2,3,4,5,6];
-
     const [db, setData] = useState([]);
 
     useEffect(()=>{
