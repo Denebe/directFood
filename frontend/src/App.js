@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import FooterBar from './Components/Footer'
 import Main from "./pages/Main/index"
 
 /*기능정의
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
+      <FooterBar />
     </BrowserRouter>
   )
 }
