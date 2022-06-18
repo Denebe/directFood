@@ -6,10 +6,8 @@ import { seApi } from "../../api/Api";
 const Search = () => {
   const [db, setData] = useState([]);
   const [loc, setLoc] = useState("");
-  const [startdate, setstartDate] = useState("2022-05-01");
   const [enddate, setendDate] = useState("2022-06-10");
 
-  const [sdate, setsdate] = useState("20220501");
   const [edate, setedate] = useState("20220610");
 
 
@@ -19,15 +17,10 @@ const Search = () => {
 
   const locKeypress = (e) => {
     if (e.key === "Enter") {
-      seApi(setData, sdate, edate);
-      console.log(db);
+      seApi(setData, edate);
     }
   };
 
-  const sdateChange = (e) => {
-    setstartDate(e.target.value);
-    setsdate(e.target.value.replace(/-/g, ""));
-  };
 
   const edateChange = (e) => {
     setendDate(e.target.value);
@@ -40,12 +33,7 @@ const Search = () => {
           국가를 검색하면 위해정보를 알 수 있어요.
         </Styled.SearchTitle>
         <Styled.DateWrapper>
-          <Styled.DateChoice
-            type="date"
-            value={startdate}
-            onChange={sdateChange}
-          ></Styled.DateChoice>
-          <div style={{ paddingLeft: "30px", paddingRight: "30px" }}>~</div>
+        
           <Styled.DateChoice
             type="date"
             value={enddate}

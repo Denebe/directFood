@@ -12,9 +12,9 @@ export const mainApi = async() => {
   });
 };
 
-export const seApi = async (setData, sdate, edate) => {
+  export const seApi = async (setData, edate) => {
     
-    const url = `${API_KEY}/I2715/json/1/100/ST_CRET_DTM=${sdate}&END_CRET_DTM=${edate}`;
+    const url = `${API_KEY}/I2715/json/1/100/LAST_UPDT_DTM=${edate}`;
 
   
     const options = {
