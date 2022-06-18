@@ -6,6 +6,8 @@ export const FlexWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
+    
 `
 
 export const BackgroundWrapper = styled.div`
@@ -14,9 +16,11 @@ export const BackgroundWrapper = styled.div`
     align-items: center;
     justify-content: center;
     background-image: url(${Background});
+    background-position: center center;
     background-size: cover;
-    width: 100%;
-    height: 920px;
+    width: 100vw;
+    height: 100vh;
+
 `
 
 export const StyledLogo = styled.img`
@@ -35,8 +39,8 @@ export const Icon = styled.img`
         margin-top: 70px;
     }
     &#scroll {
-        position: absolute;
-        bottom: -20%;
+        position: relative;
+        bottom: -23%;
         width: 42px;
     }
 `
@@ -61,8 +65,8 @@ export const MainText = styled.div`
         line-height: 36px;
     }
     &#bottom {
-        position: absolute;
-        bottom: -10%;
+        position: relative;
+        bottom: -20%;
         font-family: NotoSansKR;
         font-size: 16px;
         line-height: 18px;
