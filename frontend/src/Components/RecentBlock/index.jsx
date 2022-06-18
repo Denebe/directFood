@@ -34,7 +34,7 @@ const RecentBlock = () => {
                         return (
                             <Styled.SlickBox key={i}>
                                 <Styled.SlickContent>
-                                    <img src={v.IMAGE_URL} />
+                                    <img src={v.IMAGE_URL.split(", ")[0]} />
                                 </Styled.SlickContent>
                             </Styled.SlickBox>
                         )
