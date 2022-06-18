@@ -1,10 +1,12 @@
 import React from 'react'
 import * as Styled from './styled'
 import Search from '../../Components/Search';
+import RecentBlock from '../../Components/RecentBlock';
 
 const Main = () => {
     
     return(
+        <div>
         <Styled.FlexWrapper>
             <Styled.BackgroundWrapper>
                 <Styled.StyledLogo src='logo2.png' />
@@ -18,6 +20,8 @@ const Main = () => {
             </Styled.BackgroundWrapper>
             <Search />
         </Styled.FlexWrapper>
+        <RecentBlock />
+        </div>
     )
 }
 

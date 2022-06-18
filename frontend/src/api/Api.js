@@ -36,4 +36,27 @@ export const seApi = async (setData, sdate, edate) => {
     );
   };
 
+  export const SlickApi = async (setData) => {
+    
+    const url = `${API_KEY}/I2715/json/1/10`;
+
+  
+    const options = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      url,
+    };
+    axios(options).then(
+      (r) => {
+        console.log('connect');
+        console.log(r.data.I2715.row);
+        setData(r.data.I2715.row);
+      },
+      (error) => {
+        console.log(error.response.data);
+      }
+    );
+  };
 //http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endIdx
