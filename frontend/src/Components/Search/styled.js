@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   #root>div {
@@ -30,7 +30,7 @@ export const SearchWrapper = styled.div`
 export const SearchTitle = styled.div`
   display: flex;
   font-size: 1.5rem;
-  font-family: 'Pretendard-SemiBold';
+  font-family: "Pretendard-SemiBold";
   padding-top: 4rem;
 `;
 
@@ -40,11 +40,26 @@ export const SearchInput = styled.input`
   border: none;
   border-bottom: 1.5px solid #000000;
   margin: 0.5rem 0;
-  background-image: url('img/icon_search_24.svg');
+  background-image: url("img/icon_search_24.svg");
   background-repeat: no-repeat;
   background-position: 99%;
 
   &:focus {
     outline: none;
   }
+`;
+
+export const DateChoice = styled.input`
+  font-size: 1.5rem;
+  width: 20%;
+`;
+
+export const DateWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;

@@ -40,7 +40,7 @@ export const Icon = styled.img`
     }
     &#scroll {
         position: relative;
-        bottom: -23%;
+        bottom: -21%;
         width: 42px;
     }
 `
