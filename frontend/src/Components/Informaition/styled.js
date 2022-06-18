@@ -55,15 +55,18 @@ export const FormCheckText = styled.span`
 
 export const RaidoButton = styled.input.attrs({ type: 'radio' })`
 &:checked {
-  display: inline-block;
-  background: none;
-  padding: 0px 10px;
-  text-align: center;
-  height: 35px;
-  line-height: 33px;
-  font-weight: 500;
+    display: inline-block;
+    background: none;
+    padding: 0px 10px;
+    text-align: center;
+    height: 35px;
+    line-height: 33px;
+    font-weight: 500;
+    display: none;
+  }
+  &:checked + ${FormCheckText} {
+    background-color: #009944;
+    color: #fff;
+  }
   display: none;
-}
-
-display: none;
 `

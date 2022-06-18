@@ -24,7 +24,7 @@ const Slide = () => {
   return (
       <Styled.Wrapper>
         <Slider {...settings}>
-          {db.map((v, i) => {
+          {db ? db.map((v, i) => {
             return (
               <Styled.SlickBox key={i}>
                 <Styled.SlickContent>
@@ -32,7 +32,7 @@ const Slide = () => {
                 </Styled.SlickContent>
               </Styled.SlickBox>
             );
-          })}
+          }) : ''}
         </Slider>
       </Styled.Wrapper>
   );
