@@ -2,6 +2,7 @@ import React from 'react'
 import * as Styled from './styled'
 import Search from '../../Components/Search';
 import RecentBlock from '../../Components/RecentBlock';
+import Information from '../../Components/Informaition';
 
 const Main = () => {
     
@@ -18,9 +19,10 @@ const Main = () => {
                 인체의 건강을 해치거나 해칠 우려가 있는 것을 말한다.</Styled.MainText>
                 <Styled.Icon src='scrolldown.png' id='scroll' />
             </Styled.BackgroundWrapper>
-            <Search />
         </Styled.FlexWrapper>
         <RecentBlock />
+        <Search />
+        <Information />
         </div>
     )
 }
