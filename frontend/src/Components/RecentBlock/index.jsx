@@ -18,21 +18,23 @@ const RecentBlock = () => {
         
     const slickList = [1,2,3,4,5,6];
 
-    const [db, setData] = useState();
+    const [db, setData] = useState([]);
+
     useEffect(()=>{
         SlickApi(setData);
         console.log(db);
     },[])
+    
     return(
         <Styled.FlexContainer>
             <Styled.MainText>" 최근 <span style={{backgroundColor: "#009944", color: "white"}}>위해 식품</span>은</Styled.MainText>
             <Styled.Wrapper>
                 <Slider {...settings}>
-                    {slickList.map((v,i)=> {
+                    {db.map((v,i)=> {
                         return (
                             <Styled.SlickBox key={i}>
                                 <Styled.SlickContent>
-                                    {v}
+                                    <img src={v.IMAGE_URL} />
                                 </Styled.SlickContent>
                             </Styled.SlickBox>
                         )

@@ -29,6 +29,8 @@ export const SlickBox = styled.div`
 `
 export const SlickContent = styled.div`
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
 `
 
 export const ContentBox = styled.div`
